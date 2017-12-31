@@ -9,4 +9,20 @@
   // text-shadow: black 0.3em 0.3em 0.3em;
 }
 
+form div {
+  padding-bottom: 5px;
 }
+
+label {
+  padding-left: 5px;
+}
+
+.entryForm {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #aaa;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+option:first { color: #999; }
