@@ -16,34 +16,6 @@
   rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
   crossorigin="anonymous">
   <link href="css/custom.css" rel="stylesheet">
-
-  <script>
-    function enterTournament() {
-      var f = document.forms["enterForm"];
-      var name = f["name"].value;
-      var country = f["country"].value;
-      var club = f["club"].value || 'None entered';
-      var rank = f["rank"].value;
-      var addt = f["additional"].value;
-
-      var message =
-        "Name: " + name + "\n" +
-        "Country: " + country + "\n" +
-        "Club: " + club + "\n" +
-        "Rank: " + rank + "\n";
-
-      if (addt) {
-        message += "Additional details: " + addt;
-      }
-
-      f["message"].value = message;
-
-      console.log("Message: " + message);
-
-      return true;
-    }
-  </script>
-
 </head>
 
 <body>
@@ -92,7 +64,7 @@
         <!-- a class="btn btn-default" href="#" role="button">View details &raquo;</a -->
         <div class="entryForm">
           <p><b>Enter the tournament:</b></p>
-          <form id="enterForm" action="https://formspree.io/neil@duff-howie.com" method="POST">
+          <form id="enterForm" action="https://formspree.io/carelgoodheir@gmail.com" method="POST">
             <div><input type="text" name="name" placeholder="Name" required></div>
             <div><input type="text" name="country" placeholder="Country" required></div>
             <div><input type="text" name="club" placeholder="Club"></div>
@@ -131,10 +103,9 @@
               <option value="6d">6d</option>
               <option value="7d">7d</option>
             </select><label>Rank</label></div>
-            <input type="hidden" name="message">
             <div><textarea name="additional" rows="4" cols="25" placeholder="Additional details"></textarea></div>
             <div><input type="email" name="_replyto" placeholder="Contact Email" required></div>
-            <div><button onclick="enterTournament();">Submit</button></div>
+            <div><button>Submit</button></div>
           </form>
         </div>
         <p>Past results:</p>
